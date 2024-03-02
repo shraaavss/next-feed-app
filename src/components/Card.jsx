@@ -28,7 +28,7 @@ export default function Post(props) {
                 </div>
 
                 <div className="post-body">
-                    <img src={test} alt="post" />
+                    <Image src={test} alt="post" width={600}/>
                 </div>
 
                 <div className="post-footer">
