@@ -1,17 +1,13 @@
 import Head from "next/head";
 import Header from "@/components/Header";
-import { signIn } from 'next-auth/react'
+import { useSession, signIn, signOut } from "next-auth/react"
+
 
 export default function Profile() {
 
-  const MySignInButton = () => {
-    return (
-      <button onClick={() => signIn('google')}>
-        Sign in with Google
-      </button>
-    )
-  }
 
+  const { data: session, status } = useSession()
+  const userEmail = session?.user?.email
 
   return (
     <>
@@ -23,8 +19,7 @@ export default function Profile() {
       </Head>
 
       <Header />
-
-      <MySignInButton />
+      {status === "authenticated" ? <button onClick={() => signOut()}>Sign out</button> : <button onClick={() => signIn("google")}>Sign in</button>}
 
     </>
   );
