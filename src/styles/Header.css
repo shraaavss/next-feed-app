@@ -10,6 +10,15 @@
     gap: 6rem;
 }
 
+.nav-img {
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+}
+
+.nav-img:hover{
+    transform: translateY(-5px);
+}
+
 /* Media query for mobile screens */
 @media (max-width: 768px) {
     .main-wrap {

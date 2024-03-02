@@ -13,13 +13,8 @@ export default function Home() {
   useEffect(() => {
     fetch("https://api.capy.lol/v1/capybaras?take=25&random=true")
       .then(res => res.json())
-<<<<<<< HEAD
-      .then(data => setTestArray(data.data))
-    print("Fetched")
-=======
       .then(data=> setTestArray(data.data))
     console.log("Fetched")
->>>>>>> 58d76c502cb5d474809f2b12d6e1b8e8edf4ddeb
   }, [])
 
   const cardsList = testArray.map(capy => {

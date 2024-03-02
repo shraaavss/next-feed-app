@@ -1,6 +1,18 @@
 import Head from "next/head";
 import Header from "@/components/Header";
+import { signIn } from 'next-auth/react'
+
 export default function Profile() {
+
+  const MySignInButton = () => {
+    return (
+      <button onClick={() => signIn('google')}>
+        Sign in with Google
+      </button>
+    )
+  }
+
+
   return (
     <>
       <Head>
@@ -11,7 +23,9 @@ export default function Profile() {
       </Head>
 
       <Header />
-      
+
+      <MySignInButton />
+
     </>
   );
 }
