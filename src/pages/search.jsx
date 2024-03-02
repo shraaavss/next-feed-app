@@ -11,6 +11,10 @@ export default function Search() {
       </Head>
 
       <Header />
+
+      <div className="grid-layout">
+        
+      </div>
       
     </>
   );
