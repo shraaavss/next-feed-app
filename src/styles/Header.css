@@ -1,15 +1,24 @@
-.main-wrap{
+.main-wrap {
     padding: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.nav-bar{
+.nav-bar {
     display: flex;
     gap: 6rem;
 }
 
-/* .nav-img > img{
-    
-} */
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .main-wrap {
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+}
