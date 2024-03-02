@@ -1,5 +1,10 @@
-.post{
-    width: 600px;
+.post-wrap{
+    padding: 2rem;
+}
+
+.post {
+    width: 100%; /* Set the width to 100% for responsiveness */
+    max-width: 600px; /* Set a max-width to maintain readability on larger screens */
     background-color: bisque;
     border: 1px solid black;
     border-radius: 1rem;
@@ -8,19 +13,36 @@
     align-items: center;
     padding: 0.5rem 1rem;
     gap: 0.5rem;
-}
-
-.post-header, .post-footer{
+    margin: 0 auto; /* Center the post on larger screens */
+  }
+  
+  .post-header,
+  .post-footer {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
-}
-
-.post-user, .post-control, .post-action, .post-share{
+  }
+  
+  .post-user,
+  .post-control,
+  .post-action,
+  .post-share {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 0.5rem;
     font-weight: bold;
-}
+  }
+  
+  /* Media query for mobile layout */
+  @media (max-width: 600px) {
+    .post {
+      padding: 0.5rem; /* Adjust padding for smaller screens */
+    }
+  
+    .post-body img {
+      width: 100%; /* Make the image fill the container on smaller screens */
+    }
+  }
+  
