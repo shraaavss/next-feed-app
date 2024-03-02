@@ -23,6 +23,10 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  .post-body > img{
+    max-width: 100%;
+  }
   
   .post-user,
   .post-control,
