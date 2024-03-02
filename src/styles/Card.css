@@ -1,0 +1,14 @@
+.post{
+    width: 600px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
