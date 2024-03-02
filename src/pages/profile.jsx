@@ -1,13 +1,19 @@
 import Head from "next/head";
 import Header from "@/components/Header";
 import { useSession, signIn, signOut } from "next-auth/react"
-
+import { useState, useEffect } from 'react';
 
 export default function Profile() {
 
 
   const { data: session, status } = useSession()
-  const userEmail = session?.user?.email
+
+  if (!session) {
+    // Redirect to login page if user is not authenticated
+    return <p>Please sign in</p>;
+  }
+
+  const { user } = session;
 
   return (
     <>
@@ -19,7 +25,16 @@ export default function Profile() {
       </Head>
 
       <Header />
-      {status === "authenticated" ? <button onClick={() => signOut()}>Sign out</button> : <button onClick={() => signIn("google")}>Sign in</button>}
+
+      <div className="main-profile-card">
+        <span className="pfp-name">
+          <img src={user.image} alt="Profile Picture" />
+          <h1>Welcome, {user.name}!</h1>
+        </span>
+      </div>
+
+      {status === "authenticated" ? <button onClick={() => signOut()}>Sign out</button> :
+        <button onClick={() => signIn("google")}>Sign in</button>}
 
     </>
   );
