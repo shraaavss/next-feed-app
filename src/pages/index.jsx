@@ -10,7 +10,7 @@ export default function Home() {
     fetch("https://api.capy.lol/v1/capybaras?take=25&random=true")
       .then(res => res.json())
       .then(data=> setTestArray(data.data))
-    print("Fetched")
+    console.log("Fetched")
   }, [])
 
   const cardsList = testArray.map(capy => {
