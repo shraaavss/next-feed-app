@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import home from './assets/homeIcon.svg';
-import search from './assets/searchIcon.svg';
-import prof from './assets/ProfileIcon.svg';
+import home from '../assets/homeIcon.svg';
+import search from '../assets/searchIcon.svg';
+import prof from '../assets/ProfileIcon.svg';
 
 export default function Header() {
   return (
