@@ -13,7 +13,10 @@ export default function Home() {
       </Head>
 
       <Header />
-      <Card />
+
+      <main >
+        <Card />
+      </main>
       
     </>
   );
