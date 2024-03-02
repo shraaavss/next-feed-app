@@ -8,6 +8,7 @@ import bookmark from "../assets/bookmark.svg";
 import like from "../assets/like.svg"
 import repost from "../assets/repost.svg";
 import share from "../assets/share.svg"
+import { useState, useEffect } from "react";
 
 export default function Post(props) {
 
@@ -27,7 +28,7 @@ export default function Post(props) {
                 </div>
 
                 <div className="post-body">
-                    <Image src={test} width={600} alt="post" />
+                    <img src={test} alt="post" />
                 </div>
 
                 <div className="post-footer">
