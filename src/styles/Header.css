@@ -4,7 +4,7 @@
 }
 
 .main-wrap {
-    margin-top: 2rem;
+    margin-block: 2rem;
     background-color: rgba(156, 144, 144, 0.8); /* Adjust opacity for desired translucency */
     backdrop-filter: blur(5px); /* Add subtle blur for a glassy effect */
     /* width: 100%; */
