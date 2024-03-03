@@ -35,8 +35,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: center;
     gap: 0.5rem;
     font-weight: bold;
+    font-size: 1.2rem;
   }
   
   /* Media query for mobile layout */
