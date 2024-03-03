@@ -49,7 +49,7 @@ export default function Home() {
 
           <main >
 
-            <p>Signed in as {userEmail}</p>
+            {/* <p>Signed in as {userEmail}</p>  */}
 
             {showSearch && <Search />}
 
@@ -59,8 +59,10 @@ export default function Home() {
 
         :
         <>
-          <p>Not signed in.</p>
-          <button onClick={() => signIn("google")}>Sign in</button>
+          <div className="sgnin">
+            {/* <p>Not signed in.</p> */}
+            <button onClick={() => signIn("google")}>Sign in</button>
+          </div>
         </>
       }
 
