@@ -1,16 +1,17 @@
-.header-wrapper{
+.header-wrapper {
     display: flex;
     justify-content: center;
 }
 
 .main-wrap {
     margin-block: 2rem;
-    background-color: rgba(156, 144, 144, 0.8); /* Adjust opacity for desired translucency */
-    backdrop-filter: blur(5px); /* Add subtle blur for a glassy effect */
+    background-color: rgba(156, 144, 144, 0.8);
+    /* Adjust opacity for desired translucency */
+    backdrop-filter: blur(5px);
+    /* Add subtle blur for a glassy effect */
     /* width: 100%; */
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-    /* position: fixed; 
-    top: 0;
+    /* top: 0;
     left: 0; */
     padding: 1rem 2rem;
     display: flex;
@@ -30,9 +31,40 @@
     border-radius: 1rem;
 }
 
-.nav-img:hover{
+.nav-img:hover {
     transform: translateY(-5px);
 }
+
+/* Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    /* semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style to close button */
+.popup-content button:last-child {
+    margin-left: 10px;
+    background: #ccc;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
 /* Media query for mobile screens */
 @media (max-width: 768px) {
     .main-wrap {
@@ -46,32 +78,28 @@
     }
 }
 
-/* Overlay */
-.popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .popup-content {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Style to close button */
-  .popup-content button:last-child {
-    margin-left: 10px;
-    background: #ccc;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-  }
-  
+@media (max-width: 768px) {
+    .main-wrap {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar {
+        gap: 1rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .main-wrap {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar {
+        gap: 1rem;
+    }
+
+}
