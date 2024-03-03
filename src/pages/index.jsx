@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Head from "next/head";
 import Header from "@/components/Header";
 import Card from "@/components/Card"
-import Search from "./Search";
+import Search from "./search";
 import { useSession, signIn, signOut } from "next-auth/react"
 
 
