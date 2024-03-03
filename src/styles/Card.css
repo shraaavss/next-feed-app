@@ -52,3 +52,6 @@
     }
   }
   
+.post-icons:hover{
+  cursor: pointer;
+}
