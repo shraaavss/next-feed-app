@@ -4,7 +4,7 @@
 
 .post {
     width: 100%; /* Set the width to 100% for responsiveness */
-    max-width: 600px; /* Set a max-width to maintain readability on larger screens */
+    width: 600px; /* Set a max-width to maintain readability on larger screens */
     background-color: bisque;
     border: 1px solid black;
     border-radius: 1rem;
