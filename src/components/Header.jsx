@@ -32,7 +32,7 @@ export default function Header() {
   };
 
   return (
-    <div className='header-wrapper wrapper block'>
+    <div className='header-wrapper'>
         <header className="main-wrap">
             <nav className="nav-bar">
                 <Link href={"/"}><Image width={40} className="nav-img" src={home} alt="home" /></Link>
