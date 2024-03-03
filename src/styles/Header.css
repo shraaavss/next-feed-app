@@ -6,18 +6,12 @@
 .main-wrap {
     margin-block: 2rem;
     background-color: rgba(156, 144, 144, 0.8);
-    /* Adjust opacity for desired translucency */
     backdrop-filter: blur(5px);
-    /* Add subtle blur for a glassy effect */
-    /* width: 100%; */
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-    /* top: 0;
-    left: 0; */
     padding: 1rem 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
 }
 
 .nav-bar {
