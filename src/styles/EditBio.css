@@ -17,3 +17,11 @@
     border-radius: 8px;
   }
   
+  .pen {
+    margin: 0;
+    padding: 0;
+  }
+
+  .pen-cont{
+    cursor: pointer;
+  }
