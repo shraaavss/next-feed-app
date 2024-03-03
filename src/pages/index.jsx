@@ -43,15 +43,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
       {status === "authenticated" ?
-        <main >
-          <p>Signed in as {userEmail}</p>
+        <>
+          <Header />
 
-          {showSearch && <Search/>}
+          <main >
 
-          {cardsList}
-        </main>
+            <p>Signed in as {userEmail}</p>
+
+            {showSearch && <Search />}
+
+            {cardsList}
+          </main>
+        </>
+
         :
         <>
           <p>Not signed in.</p>
