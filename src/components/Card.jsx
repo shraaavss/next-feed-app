@@ -23,12 +23,12 @@ export default function Post(props) {
             <div className="post">
                 <div className="post-header">
                     <div className="post-user">
-                        <Image src={temp} width={"2rem"} height={"2rem"} alt="userImg" />
+                        <Image src={temp} width={32} height={32} alt="userImg" />
                         <span>Sneh Gupta</span>
                     </div>
                     <div className="post-control">
-                        <Image src={appImg} width={"2rem"} height={"2rem"} alt="appImg" />
-                        <Image src={snoozeImg} width={"2rem"} height={"2rem"} alt="snoozeImg" />
+                        <Image src={appImg} width={32} height={32} alt="appImg" />
+                        <Image src={snoozeImg} width={32} height={32} alt="snoozeImg" />
                     </div>
                 </div>
 
@@ -39,19 +39,19 @@ export default function Post(props) {
                 <div className="post-footer">
                     <div className="post-action">
                         {liked?
-                        <Image onClick={()=>setLiked(!liked)} src={Liked} width={"2rem"} height={"2rem"} alt={"Liked"}/>
+                        <Image onClick={()=>setLiked(!liked)} src={Liked} width={32} height={32} alt={"Liked"}/>
                         :
-                        <Image onClick={()=>setLiked(!liked)} src={Like} width={"2rem"} height={"2rem"} alt={"Like"}/>}
-                        {/* <Image src={Liked} width={"2rem"} height={"2rem"} alt={"liked"}/> */}
+                        <Image onClick={()=>setLiked(!liked)} src={Like} width={32} height={32} alt={"Like"}/>}
+                        {/* <Image src={Liked} width={32} height={32} alt={"liked"}/> */}
                         {bookmarked?
-                        <Image onClick={()=>setBookmarked(!bookmarked)} src={Bookmarked} width={"2rem"} height={"2rem"} alt={"Bookmarked"}/>
+                        <Image onClick={()=>setBookmarked(!bookmarked)} src={Bookmarked} width={32} height={32} alt={"Bookmarked"}/>
                         :
-                        <Image onClick={()=>setBookmarked(!bookmarked)} src={Bookmark} width={"2rem"} height={"2rem"} alt={"Bookmark"}/>}
-                        {/* <Image src={bookmark} width={"2rem"} height={"2rem"} alt="bookmark" /> */}
+                        <Image onClick={()=>setBookmarked(!bookmarked)} src={Bookmark} width={32} height={32} alt={"Bookmark"}/>}
+                        {/* <Image src={bookmark} width={32} height={32} alt="bookmark" /> */}
                     </div>
                     <div className="post-share">
-                        <Image src={repost} width={"2rem"} height={"2rem"} alt="repost" />
-                        <Image src={share} width={"2rem"} height={"2rem"} alt="share" />
+                        <Image src={repost} width={32} height={32} alt="repost" />
+                        <Image src={share} width={32} height={32} alt="share" />
                     </div>
                 </div>
             </div>
