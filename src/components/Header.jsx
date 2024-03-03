@@ -6,7 +6,7 @@ import prof from '../assets/ProfileIcon.svg';
 
 export default function Header() {
   return (
-    <div>
+    <div className='header-wrapper'>
         <header className="main-wrap">
             <nav className="nav-bar">
                 <Link href={"/"}><Image width={40} className="nav-img" src={home} alt="home" /></Link>
