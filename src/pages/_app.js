@@ -4,6 +4,7 @@ import '../styles/Profile.css'
 import "../styles/Card.css"
 import '../styles/CollectionsPage.css'
 import '../styles/EditBio.css'
+import '../styles/Collections.css'
 
 import { SessionProvider } from "next-auth/react"
 
