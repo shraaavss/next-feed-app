@@ -3,6 +3,7 @@ import React from 'react'
 function Collections() {
   return (
     <div className='cards'>
+      <div id='liked-collection' className="card block">LIKED COLLECTION</div>
       <div className="card block">TWO</div>
       <div className="card block">THREE</div>
       <div className="card block">ONE</div>
