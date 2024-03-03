@@ -42,7 +42,7 @@ export default function Home() {
       {status === "authenticated" ?
         <main >
           <p>Signed in as {userEmail}</p>
-          <button onClick={() => signOut()}>Sign out</button>
+          {/* <button onClick={() => signOut()}>Sign out</button> */}
           {cardsList}
         </main>
         :

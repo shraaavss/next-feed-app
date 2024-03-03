@@ -44,17 +44,19 @@ export default function Profile() {
           <img src={user.image} alt="Profile Picture" />
           <h1>{user.name}</h1>
           <p className="bio">{userBio}
-          <EditBio initialBio={userBio} onSave={handleSaveBio} /></p>
+            <EditBio initialBio={userBio} onSave={handleSaveBio} /></p>
         </span>
 
-        
+        {status === "authenticated" ? (
+          <button onClick={() => signOut()}>Sign out</button>
+        ) : (
+          <button onClick={() => signIn("google")}>Sign in</button>
+        )}
+
+
       </div>
 
-      {status === "authenticated" ? (
-        <button onClick={() => signOut()}>Sign out</button>
-      ) : (
-        <button onClick={() => signIn("google")}>Sign in</button>
-      )}
+
     </>
   );
 }
