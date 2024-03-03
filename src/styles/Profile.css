@@ -1,7 +1,8 @@
 .main-profile-card{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     gap: 2rem;
 }
 
@@ -21,4 +22,8 @@
 .bio{
     display: flex;
     gap: 1rem;
+}
+
+.sgBtn {
+    max-width: fit-content;
 }
