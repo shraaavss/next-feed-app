@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import '../styles/Header.css'
 import '../styles/Profile.css'
 import "../styles/Card.css"
-// import '../styles/Collections.css'
+
 import { SessionProvider } from "next-auth/react"
 
 
