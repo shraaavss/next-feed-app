@@ -3,6 +3,7 @@ import '../styles/Header.css'
 import '../styles/Profile.css'
 import "../styles/Card.css"
 import '../styles/CollectionsPage.css'
+import '../styles/EditBio.css'
 
 import { SessionProvider } from "next-auth/react"
 
