@@ -1,10 +1,10 @@
-import Embed from 'react-embed';
 import React from 'react';
+import CollectionsPage from '@/components/CollectionsPage';
 
 function Test() {
   return (
     <div>
-        
+        <CollectionsPage />
 
     </div>
   )
