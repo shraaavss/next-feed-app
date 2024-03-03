@@ -2,9 +2,14 @@ import { useState, useEffect } from "react";
 import Head from "next/head";
 import Header from "@/components/Header";
 import Card from "@/components/Card"
+import Search from "./search";
 import { useSession, signIn, signOut } from "next-auth/react"
 
+
 export default function Home() {
+
+  // state variables
+  const [showSearch, setShowSearch] = useState(true)
 
   const { data: session, status } = useSession()
   const userEmail = session?.user?.email
@@ -42,7 +47,9 @@ export default function Home() {
       {status === "authenticated" ?
         <main >
           <p>Signed in as {userEmail}</p>
-          {/* <button onClick={() => signOut()}>Sign out</button> */}
+
+          {showSearch && <Search/>}
+
           {cardsList}
         </main>
         :

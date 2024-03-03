@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import Modal from 'react-modal';
+import edit from '../assets/EditIcon.svg'
+import Image from 'next/image';
 
 const EditBio = ({ initialBio, onSave }) => {
   const [bio, setBio] = useState(initialBio);
@@ -25,7 +27,9 @@ const EditBio = ({ initialBio, onSave }) => {
 
   return (
     <div>
-      <button onClick={() => setIsModalOpen(true)}>Edit Bio</button>
+      <span className='pen-cont' onClick={() => setIsModalOpen(true)}>
+        <Image className='pen' src={edit} width={'0.2rem'} alt="pen" />
+      </span>
 
       <Modal
         isOpen={isModalOpen}
